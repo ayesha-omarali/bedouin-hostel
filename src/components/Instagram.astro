@@ -1,0 +1,82 @@
+---
+import InstaProfile from './Instagram/InstaProfile.astro';
+import InstaDorms from './Instagram/InstaDorms.astro';
+---
+
+<section id="social" class="bg-zinc-900 py-16 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start md:items-center">
+      <!-- LEFT: Instagram + Features -->
+      <div class="flex justify-center md:justify-start order-1 md:order-1">
+        <div class="w-full max-w-sm">
+          <div class="bg-zinc-800 rounded-xl shadow-lg overflow-hidden">
+            <InstaDorms />
+            <div class="p-6 space-y-4 text-gray-200 text-sm">
+              <div
+                class="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+              >
+                <span>🛏️</span>
+                <span>4-Bunk Dorm</span>
+              </div>
+              <div
+                class="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+              >
+                <span>🛏️</span>
+                <span>6-Bunk Room</span>
+              </div>
+              <div
+                class="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+              >
+                <span>🏠</span>
+                <span>Rooftop Studios</span>
+              </div>
+              <div
+                class="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+              >
+                <span>🍳</span>
+                <span>Full Kitchen</span>
+              </div>
+              <div
+                class="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer"
+              >
+                <span>🌸</span>
+                <span>Community garden</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Content -->
+      <div class="flex justify-center md:justify-start order-2 md:order-2">
+        <div class="w-full max-w-sm flex flex-col space-y-10 text-center md:text-left">
+          <InstaProfile />
+
+          <p class="text-gray-300 text-base md:text-base leading-loose">
+            A green <span class="text-white font-semibold">garden</span> with an outdoor kitchen and
+            Bedouin areesha — where <span class="text-white font-semibold">
+              music, food, and friendships
+            </span> come alive. A <span class="text-white font-semibold">rooftop</span> with panoramic
+            views of Dahab life: mountains, sea, and <span class="text-white font-semibold">
+              moonrise magic
+            </span>. And our <span class="text-white font-semibold">stage</span> — a hidden gem where
+            underground artists, poets, and musicians share their talents.
+          </p>
+
+          <p class="text-gray-300 text-base md:text-md leading-loose">
+            Come stay, cook, play music, and watch the sunrise with us. Help us grow this community
+            and be part of a story that belongs to all travelers.
+          </p>
+
+          <a
+            href="https://www.instagram.com/YOUR_HANDLE/"
+            target="_blank"
+            class="inline-block text-white font-bold text-lg hover:text-gray-200 transition-colors underline underline-offset-4"
+          >
+            Follow us on Instagram →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

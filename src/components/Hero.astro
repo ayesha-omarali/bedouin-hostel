@@ -1,0 +1,33 @@
+---
+import background from '../assets/background.svg';
+---
+
+<!-- 
+<div id="container">
+	<img id="background" src={background.src} alt="" fetchpriority="high" />
+</div> -->
+
+<section class="relative min-h-screen flex items-center justify-center">
+  <img
+    src="/src/assets/hero.jpg"
+    alt="Bedouin Hostel"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div class="relative z-10 text-right text-white px-6">
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+      Bedouin Hostel
+    </h1>
+
+    <p class="mt-4 text-lg md:text-xl opacity-90">
+      We have camels in the backyard.
+    </p>
+
+    <a
+      href="#contact"
+      class="inline-block mt-8 px-8 py-4 bg-white text-black font-semibold rounded-lg"
+    >
+      Book Now
+    </a>
+  </div>
+</section>

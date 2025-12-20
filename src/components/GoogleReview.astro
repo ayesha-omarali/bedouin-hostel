@@ -1,0 +1,44 @@
+---
+// src/components/ReviewsSection.astro
+const reviews = [
+  {
+    name: 'Alican Caglayan',
+    href: 'https://maps.app.goo.gl/2aFmryXVmtkNYGwGA',
+    text: "I didn't know I had a home in Dahab. It's a great hostel with wonderful people. Stay here and you'll thank me later.",
+  },
+  {
+    name: 'Alia Khaled',
+    href: 'https://maps.app.goo.gl/Em1CMpF26Bckf8KYA',
+    text: 'The most magnificent hostel I have ever been to, rooms are cozy and comfortable,the owner Mr. Afifi is very kind and generous, in the best quiet location, Nourhan the front desk and Hala thank you for helping Bedouin hostel guests to make us feel like home, We came as guest and lived like family a lot of chilling area such as the main terrace and the rooftop with an outstanding sea and mountain view, also trips and evening entertainment arranged by the hostel on regular basis, I would definitely be back.',
+  },
+  {
+    name: 'Abd Elhamied Magdy',
+    href: 'https://maps.app.goo.gl/EWrascAUtnjfqaJ4A',
+    text: 'Staying at the Bedouin Hostel was an unforgettable experience. From the moment we arrived, we were welcomed with incredible hospitality, warm smiles, and genuine kindness. The cozy atmosphere, peaceful surroundings, and heartfelt connections made it feel like home. By the time we left, we weren’t just guests—we were part of the Bedouin Hostel family. An absolutely amazing stay!',
+  },
+];
+---
+
+<section id="reviews" class="bg-gray-50 py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">Verified Traveler Google Reviews</h2>
+
+    <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
+      {
+        reviews.map((review) => (
+          <div class="bg-white p-6 rounded-2xl shadow-lg flex-1 max-w-sm">
+            <div class="flex items-center justify-center mb-2 space-x-2">
+              <span class="text-yellow-400">★★★★★</span>
+              <p class="font-semibold">
+                <a href={review.href} target="_blank" rel="noopener noreferrer">
+                  {review.name}
+                </a>
+              </p>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">{review.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

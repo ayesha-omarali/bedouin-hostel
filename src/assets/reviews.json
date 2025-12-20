@@ -1,0 +1,40 @@
+---
+// Example reviews array
+const reviews = [
+  {
+    name: "John D.",
+    rating: 5,
+    text: "Absolutely loved staying here! The rooftop view and Bedouin vibe are unforgettable. Will come back!"
+  },
+  {
+    name: "Maria K.",
+    rating: 5,
+    text: "Perfect location in Dahab, friendly staff, and the kitchen area is amazing. Highly recommend."
+  },
+  {
+    name: "Ahmed S.",
+    rating: 4,
+    text: "Great hostel with amazing vibes. Loved the rooftop music sessions!"
+  }
+];
+---
+
+<section id="reviews" class="bg-zinc-900 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
+      Traveler Reviews
+    </h2>
+
+    <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+      {reviews.map((review) => (
+        <div class="min-w-[300px] md:min-w-[350px] bg-gradient-to-tr from-purple-700 to-pink-500 p-6 rounded-2xl shadow-lg snap-start flex-shrink-0">
+          <div class="flex items-center mb-3">
+            <span class="text-yellow-400 mr-2">{'★'.repeat(review.rating)}</span>
+            <p class="font-semibold text-white">{review.name}</p>
+          </div>
+          <p class="text-white text-sm leading-relaxed">{review.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

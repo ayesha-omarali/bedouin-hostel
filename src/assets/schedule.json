@@ -1,0 +1,106 @@
+{
+  "weeks": [
+    {
+      "weekId": "2025-29-w1", 
+      "label": "Dec 29 - Jan 4",
+      "eventsWeek": [
+        {
+          "day": "mon",
+          "date": "dec 29",
+          "eventsOfTheDay": [
+            {
+              "time": "6pm to 8:30pm",
+              "title": "Afcon Angola vs Egypt", 
+              "description": "",
+              "allDay": false,
+              "duration": "", 
+              "link": ""
+            },
+            {
+              "time": "8:30pm",
+              "title": "Monday Moody Jammming", 
+              "description": "",
+              "allDay": false,
+              "duration": "",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "day": "tues",
+          "date": "dec 30",
+          "eventsOfTheDay": [
+            {
+              "time": "8am to 6pm",
+              "title": "White, Red, and Closed Canyon", 
+              "description": "",
+              "allDay": true,
+              "duration": "",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "day": "wed",
+          "date": "dec 31",
+          "eventsOfTheDay": [
+            {
+              "time": "3:30pm to 00:30am",
+              "title": "New Years Eve",
+              "description": "Sunset rooftop, movie time, dinner, concert",
+              "allDay": true,
+              "duration": "",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "day": "thurs",
+          "date": "jan 1",
+          "eventsOfTheDay": [
+            {
+              "time": "10am - 11pm",
+              "title": "Sunset Hike to Saint Catherine",
+              "description": "",
+              "allDay": false,
+              "duration": "",
+              "link": ""
+            },
+            {
+              "time": "9pm",
+              "title": "Mountain Bedouin Dinner & Jam",
+              "description": "",
+              "allDay": false,
+              "duration": "evening",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "day": "fri",
+          "date": "jan 2",
+          "eventsOfTheDay": [
+            {
+              "time": "8pm - 12pm",
+              "title": "Karaoke Night",
+              "description": "",
+              "allDay": false,
+              "duration": "evening",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "day": "sat",
+          "date": "jan 3",
+          "eventsOfTheDay": []
+        },
+        {
+          "day": "sun",
+          "date": "jan 4",
+          "eventsOfTheDay": []
+        }
+      ]
+    }
+  ]
+}

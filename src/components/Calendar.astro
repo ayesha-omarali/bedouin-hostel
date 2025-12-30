@@ -1,0 +1,34 @@
+---
+import schedule from '../assets/schedule.json';
+const week = schedule.weeks[0];
+---
+
+<div class="flex flex-col gap-3">
+  {
+    week.eventsWeek.map((day: any) => (
+      <div class="grid grid-cols-[56px_1fr] gap-3 items-stretch">
+        <div class="flex items-center justify-center text-xs lowercase text-white/60">
+          {day.day} {day.date}
+        </div>
+
+        <div class="flex gap-2">
+          {day.events.length === 0 && (
+            <div class="flex-1 rounded-2xl border border-white/10 bg-white/5 min-h-[64px]" />
+          )}
+
+          {day.events.map((event: any) => (
+            <a
+              href={event.link || '#'}
+              class={`flex-1 rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-3 text-center text-white transition hover:-translate-y-0.5 ${
+                event.allDay ? 'min-h-[110px]' : 'min-h-[64px]'
+              } flex flex-col justify-center`}
+            >
+              {event.time && <div class="text-xs text-white/70">{event.time}</div>}
+              <div class="mt-1 text-sm font-medium leading-tight">{event.title}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>
